@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>CodeEd: Block 2, Lesson 1</title>
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/bootstrap-responsive.css" rel="stylesheet">
+        <link href="css/docs.css" rel="stylesheet">
+        <link href="css/codeed.css" rel="stylesheet">
+        <link href="js/google-code-prettify/prettify.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Navbar
+             ================================================== -->
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="brand" href="http://www.codeed.org/">CodeEd</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li>
+                                <a href="/index.html">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="/lesson1.html">Lesson 1</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson2.html">Lesson 2</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson3.html">Lesson 3</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson4.html">Lesson 4</a>
+                            </li>
+                            <li class="">
+                                <a href="/lesson5.html">Lesson 5</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <header class="jumbotron subhead" id="overview">
+            <div class="container">
+                <h1>CodeEd</h1>
+                <p class="lead">Lesson 1: Review of Block 1 and Making a New Page</p>
+            </div>
+        </header>
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="span3 bs-docs-sidebar">
+                    <ul class="nav nav-list bs-docs-sidenav">
+                        <li class="active"><a href="#review"><i class="icon-chevron-right"></i>Review of HTML tags and attributes from Block 1</a></li>
+                        <li><a href="#editor-commands"><i class="icon-chevron-right"></i>Creating, opening, saving, and compiling</a></li>
+                        <li><a href="#whitespace"><i class="icon-chevron-right"></i>Whitespace</a></li>
+                        <li><a href="#comments"><i class="icon-chevron-right"></i>HTML comments</a></li>
+                    </ul>
+                </div>
+
+                <div class="span9">
+		  <section id="review">
+                    <h3>Review of HTML tags and attributes from Block 1</h3>
+		    <table class="code">
+		      <tr>
+			<th>Code</th>
+			<th>What it means</th>
+		      </tr>
+		      <tr>
+			<td>&lt;html&gt; ... &lt;html&gt;</td>
+			<td>Start web page and end web page</td>
+		      </tr>
+		      <tr>
+			<td>&lt;head&gt; ... &lt;head&gt;</td>
+			<td>Where information goes but is not inside the window</td>
+		      </tr>
+		      <tr>
+			<td>&lt;title&gt; ... &lt;title&gt;</td>
+			<td>The name that appears on the browser tab/bar</td>
+		      </tr>
+		      <tr>
+			<td>&lt;body&gt; ... &lt;body&gt;</td>
+			<td>Where everything seen in the browser window goes</td>
+		      </tr>
+		      <tr>
+			<td>&lt;b&gt; ... &lt;&gt;</td>
+			<td>Bold text</td>
+		      </tr>
+		      <tr>
+			<td>&lt;i&gt; ... &lt;i&gt;</td>
+			<td>Italic text</td>
+		      </tr>
+		      <tr>
+			<td>&lt;u&gt; ... &lt;u&gt;</td>
+			<td>Underlined text</td>
+		      </tr>
+		      <tr>
+			<td>&lt;h1&gt; ... &lt;h1&gt;</td>
+			<td>Biggest header</td>
+		      </tr>
+		      <tr>
+			<td>&lt;h2&gt; ... &lt;h2&gt;</td>
+			<td>Second biggest header</td>
+		      </tr>
+		      <tr>
+			<td>&lt;p&gt; ... &lt;p&gt;</td>
+			<td>Paragraph</td>
+		      </tr>
+		      <tr>
+			<td>&lt;a href="..."&gt; ... &lt;a&gt;</td>
+			<td>Link</td>
+		      </tr>
+		      <tr>
+			<td>&lt;img src="..." /&gt;</td>
+			<td></td>
+		      </tr>
+		      <tr>
+			<td>&lt;div&gt; ... &lt;div&gt;</td>
+			<td>Container for block elements</td>
+		      </tr>
+		      <tr>
+			<td>&lt;span&gt; ... &lt;span&gt;</td>
+			<td>Container for text</td>
+		      </tr>
+		      <tr>
+			<td>&lt;ol&gt; ... &lt;ol&gt;</td>
+			<td>Ordered list</td>
+		      </tr>
+		      <tr>
+			<td>&lt;ul&gt; ... &lt;ul&gt;</td>
+			<td>Unordered list</td>
+		      </tr>
+		      <tr>
+			<td>&lt;li&gt; ... &lt;li&gt;</td>
+			<td>List item</td>
+		      </tr>
+		      </table>
+		  </section>
+		  
+		  <section id="editor-commands">		    
+                    <h3>Creating, opening, saving, and compiling</h3>
+		    <table>
+		      <tr>
+			<th>Command</th>
+			<th>What it does</th>
+		      </tr>
+		      <tr>
+			<td>CTRL + N</td>
+			<td>Creates a new file/web page</td>
+		      </tr>
+		      <tr>
+			<td>CTRL + O</td>
+			<td>Opens a file/web page</td>
+		      </tr>
+		      <tr>
+			<td>CTRL + S</td>
+			<td>Saves the current file/web page</td>
+		      </tr>
+		      <tr>
+			<td>Compile</td>
+			<td>Saves all files/web pages to online server</td>
+		      </tr>
+		    </table>
+		  </section>
+		  
+		  <section id="whitespace">
+                    <h3>Whitespace</h3>
+
+		    <h4>Without whitespace</h4>
+		    <pre class="prettyprint">
+&lt;div style="background: green"&gt;&lt;h3&gt;You should visit this website if you...&lt;/h3&gt;&lt;ol&gt;&lt;li&gt;are not sure which dog to choose&lt;/li&gt;&lt;li&gt;just simply love dogs&lt;/li&gt;&lt;li&gt;want to watch and look at videos or pictures of dogs&lt;/li&gt;&lt;li&gt;or you're just bored&lt;/li&gt;&lt;li&gt;or maybe even have no life...:)&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;&lt;hr&gt;&lt;p style="text-indent: 50px; background: pink"&gt;I love dogs. My favorite type of dog is &lt;i&gt;German Shepherd&lt;/i&gt; &lt;span style="color: red"&gt;because they can protect you from danger&lt;/span&gt;. They are also cuddly and cute. I like other dogs like these pictures.&lt;/p&gt;&lt;img src="http://www.dog-guides.us/wp-content/uploads/german-shepherds.jpg"&gt;&lt;img src="http://www.buzzle.com/img/articleImages/11227-15.jpg"&gt;&lt;img src="http://www.youpet.com/graphics/animals/german-shepherd-dog-dog.jpg"&gt;
+		    </pre>
+		    
+		    <h4>With whitespace</h4>
+		    <pre class="prettyprint">
+&lt;div style="background: green"&gt;
+&lt;h3&gt;You should visit this website if you...&lt;/h3&gt;    
+&lt;ol&gt; 
+&lt;li&gt;are not sure which dog to choose&lt;/li&gt;
+&lt;li&gt;just simply love dogs&lt;/li&gt;
+&lt;li&gt;want to watch and look at videos or pictures of dogs&lt;/li&gt; 
+&lt;li&gt;or you're just bored&lt;/li&gt;
+&lt;li&gt;or maybe even have no life...:)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;   
+
+&lt;p style="text-indent: 50px; background: pink"&gt;I love dogs. My favorite type of dog is &lt;i&gt;German Shepherd&lt;/i&gt; &lt;span style="color: red"&gt;because they can protect you from danger&lt;/span&gt;. They are also cuddly and cute. I like other dogs like these pictures.&lt;/p&gt;
+&lt;img src="http://www.dog-guides.us/wp-content/uploads/german-shepherds.jpg"&gt;
+&lt;img src="http://www.buzzle.com/img/articleImages/11227-15.jpg"&gt;
+&lt;img src="http://www.youpet.com/graphics/animals/german-shepherd-dog-dog.jpg"&gt;
+		    </pre>
+		  </section>
+
+		  <section id="comments">		    
+		    <h3>HTML comments</h3> 
+		    
+		    <h4>With comments</h4>
+		    <pre class="prettyprint linenums">
+&lt;!-- Reasons to visit --&gt;
+&lt;div style="background: green"&gt;
+&lt;h3&gt;You should visit this website if you...&lt;/h3&gt;    
+&lt;ol&gt; 
+&lt;li&gt;are not sure which dog to choose&lt;/li&gt;
+&lt;li&gt;just simply love dogs&lt;/li&gt;
+&lt;li&gt;want to watch and look at videos or pictures of dogs&lt;/li&gt; 
+&lt;li&gt;or you're just bored&lt;/li&gt;
+&lt;li&gt;or maybe even have no life...:)&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+
+&lt;hr&gt;   
+
+&lt;!-- German Shepherd section --&gt;
+&lt;p style="text-indent: 50px; background: pink"&gt;I love dogs. My favorite type of dog is &lt;i&gt;German Shepherd&lt;/i&gt; &lt;span style="color: red"&gt;because they can protect you from danger&lt;/span&gt;. They are also cuddly and cute. I like other dogs like these pictures.&lt;/p&gt;
+&lt;img src="http://www.dog-guides.us/wp-content/uploads/german-shepherds.jpg"&gt;
+&lt;img src="http://www.buzzle.com/img/articleImages/11227-15.jpg"&gt;
+&lt;img src="http://www.youpet.com/graphics/animals/german-shepherd-dog-dog.jpg"&gt;
+		    </pre>
+		  </section>
+		</div>	
+            </div><!-- /row -->
+        </div><!-- /#container -->
+	
+
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>Designed using <a href="https://github.com/twitter/bootstrap/wiki">Twitter Bootstrap</a>.</p>
+        <ul class="footer-links">
+          <li><a href="mailto:block2@codeed.org?subject=help!">Get Help</a></li>
+          <li><a href="http://block2.codeed.org">Visit Block2</a></li>
+        </ul>
+      </div>
+    </footer>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/google-code-prettify/prettify.js"></script>
+    <script src="/js/bootstrap-transition.js"></script>
+    <script src="/js/bootstrap-alert.js"></script>
+    <script src="/js/bootstrap-modal.js"></script>
+    <script src="/js/bootstrap-dropdown.js"></script>
+    <script src="/js/bootstrap-scrollspy.js"></script>
+    <script src="/js/bootstrap-tab.js"></script>
+    <script src="/js/bootstrap-tooltip.js"></script>
+    <script src="/js/bootstrap-popover.js"></script>
+    <script src="/js/bootstrap-button.js"></script>
+    <script src="/js/bootstrap-collapse.js"></script>
+    <script src="/js/bootstrap-carousel.js"></script>
+    <script src="/js/bootstrap-typeahead.js"></script>
+    <script src="/js/bootstrap-affix.js"></script>
+    <script src="/js/application.js"></script>
+    <script src="/js/codeed.js"></script>
+
+    </body>
+</html>

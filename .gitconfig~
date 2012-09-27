@@ -1,0 +1,23 @@
+[github]
+    user = krunkosaurus
+    token = 9670d27d43e6157241be45c70a2dc31d
+[user]
+    name = Mauvis Ledford
+    email = mauvis@codeed.org
+[color]
+    branch = auto
+    status = auto
+    diff = auto
+    ui = true
+[push]
+    default = current
+[pull]
+    default = current
+[alias]
+    co = checkout
+    ps = push origin HEAD:refs/for/master
+[core]
+    editor = emacs
+    autocrlf = input
+[branch]
+    autosetupmerge = true
